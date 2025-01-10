@@ -24,6 +24,7 @@ const Navbar = () => {
           }}
           
           >
+            {/* TODO: Make logo bigger or change logo.svg file */}
             <img src = {logo} alt = "logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[18px] font-bold cursor-pointer flex">Max &nbsp;
               <span className="sm:block hidden">| MatesIDK</span></p>
