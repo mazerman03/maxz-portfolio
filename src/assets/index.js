@@ -7,16 +7,24 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+
+import aws from "./tech/aws.png";
+import azure from "./tech/azure.png";
+import csharp from "./tech/csharp.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import jenkins from "./tech/jenkins.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import postman from "./tech/postman.png";
+import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import sql from "./tech/sql.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -42,16 +50,23 @@ export {
   github,
   menu,
   close,
+  aws,
+  azure, 
+  csharp,
   css,
   docker,
   figma,
   git,
   html,
   javascript,
+  jenkins,
   mongodb,
   nodejs,
+  postman,
+  python,
   reactjs,
   redux,
+  sql,
   tailwind,
   typescript,
   threejs,

@@ -4,11 +4,18 @@ import {
     creator,
     web,
     javascript,
+    jenkins,
     typescript,
     html,
+    aws,
+    azure,
+    csharp,
     css,
+    postman,
+    python,
     reactjs,
     redux,
+    sql,
     tailwind,
     nodejs,
     mongodb,
@@ -63,6 +70,30 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C#",
+      icon: csharp,
+    },
+    {
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Azure",
+      icon: azure,
+    },
+    {
+      name: "AWS",
+      icon: aws,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -75,29 +106,9 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    }, 
     {
       name: "Three JS",
       icon: threejs,
@@ -107,12 +118,16 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Postman",
+      icon: postman,
     },
     {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "Jenkins",
+      icon: jenkins,
     },
   ];
   const experiences = [
