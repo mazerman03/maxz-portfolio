@@ -19,6 +19,8 @@ import {
     starbucks,
     tesla,
     shopify,
+    steelcase,
+    omm,
     carrent,
     jobit,
     tripguide,
@@ -113,60 +115,44 @@ import {
       icon: docker,
     },
   ];
-  
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Applications Engineer Intern",
+      company_name: "Steelcase Inc",
+      icon: steelcase,
+      iconBg: "#EEB83D",
+      date: "May 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Engineered and deployed robust web applications on Azure utilizing C#, seamlessly integrating company-specific and third-party APIs to support over 100 business and non-business designers.",
+        "Developed and optimized in-house APIs for AI-driven smart template generation and automated design conversion to Revit files, enhancing the compatibility and functionality of the company’s 3D modeling tools.",
+        "Oversaw the release cycles and deployment processes for software extensions and APIs, employing continuous integration and delivery (CI/CD) practices to ensure smooth updates and feature enhancements.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Business Data Analyst Intern",
+      company_name: "Steelcase Inc",
+      icon: steelcase,
+      iconBg: "#EEB83D",
+      date: "Jan 2024 - May 2024",
+      points: [
+        "Conducted thorough data validation processes by verifying information provided by external or company dealers against the company's database standards and third-party sources, ensuring accuracy and integrity of entries.",
+        "Facilitated integration of data entries from internal databases into Salesforce accounts, enhancing support for the Sales and Operations teams in the company.",
+        "Collaborated with third-party database provider to facilitate updates and integration with internal company database, ensuring data synchronization.",
+      ],
+    },
+    {
+      title: "Middle School Mentor (Volunteer) ",
+      company_name: "Mathematical Olympiad in Mexico",
+      icon: omm,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2022 -  Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Conducted engaging mathematics classes for students aged 9-15, employing varied teaching techniques to accommodate different learning styles and foster a supportive learning environment.",
+        "Designed and assessed mathematics exams aligned with competition standards, ensuring the appropriate level of challenge and rigor while evaluating student comprehension effectively.",
+        "Actively participated as a coach and staff member in national mathematics competitions and events, providing invaluable guidance and support to students, contributing to their growth and success in competitive mathematics.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [

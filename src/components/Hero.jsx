@@ -17,7 +17,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>Software Engineer that loves backend <br className="sm:block hidden" />development, data analysis, and Mathematics</p>
         </div>
       </div>
-      {/* TODO: Fix lighting, moving model with left click */}
+      {/* TODO: Fix lighting, moving model with left click or changing z position of everything except canvas */}
       <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center" >
         <a href="#about">
