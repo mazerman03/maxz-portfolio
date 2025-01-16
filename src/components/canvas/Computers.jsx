@@ -71,7 +71,7 @@ const ComputersCanvas = () => {
         <OrbitControls enableZoom={false} 
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
-        // enablePan={false}
+        enablePan={false}
         />
         <Computers isMobile={isMobile}/>
       </Suspense>
