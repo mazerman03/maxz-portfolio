@@ -198,15 +198,15 @@ import {
         "Flask web-app for managing an anime database (CRUD). Deployed in Docker with MySQL and Jenkins for automated redeployment.",
       tags: [
         {
-          name: "python",
-          color: "yellow-text-gradient",
+          name: "Python",
+          color: "pink-text-gradient",
         },
         {
-          name: "flask",
+          name: "Flask",
           color: "green-text-gradient",
         },
         {
-          name: "docker",
+          name: "Docker",
           color: "blue-text-gradient",
         },
       ],
@@ -219,11 +219,11 @@ import {
         "Cleaned and analyzed real time data from server performance as json to recognize anomalies in server usage. While using an AI trained model to predict daily server usage.",
       tags: [
         {
-          name: "python",
-          color: "yellow-text-gradient",
+          name: "Python",
+          color: "blue-text-gradient",
         },
         {
-          name: "pandas",
+          name: "Pandas",
           color: "green-text-gradient",
         },
         {
@@ -241,7 +241,7 @@ import {
       tags: [
         {
           name: "Python",
-          color: "yellow-text-gradient",
+          color: "green-text-gradient",
         },
         {
           name: "React",
