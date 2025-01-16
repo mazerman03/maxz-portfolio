@@ -27,7 +27,7 @@ import redux from "./tech/redux.png";
 import sql from "./tech/sql.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +36,15 @@ import tesla from "./company/tesla.png";
 import steelcase from "./company/steelcase.png";
 import omm from "./company/omm.png";
 
+
+import marianagarza from "./portraits/marianagarza.jpg";
+import diegocastaneda from "./portraits/diegocastaneda.jpg";
+import emiliohernandez from "./portraits/emiliohernandez.jpg";
+
+
+import flaskdocker from "./flaskdocker.png";
+import anomalydetector from "./anomalydetector.png";
+import atratohack from "./atratohack.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -76,6 +85,12 @@ export {
   tesla,
   steelcase,
   omm,
+  flaskdocker,
+  anomalydetector,
+  atratohack,
+  diegocastaneda,
+  emiliohernandez,
+  marianagarza,
   carrent,
   jobit,
   tripguide,

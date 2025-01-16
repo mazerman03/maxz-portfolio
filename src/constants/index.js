@@ -28,6 +28,12 @@ import {
     shopify,
     steelcase,
     omm,
+    flaskdocker,
+    anomalydetector,
+    atratohack,
+    marianagarza,
+    diegocastaneda,
+    emiliohernandez,
     carrent,
     jobit,
     tripguide,
@@ -92,18 +98,6 @@ import {
     {
       name: "AWS",
       icon: aws,
-    },
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
     },
     {
       name: "React JS",
@@ -173,93 +167,93 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Max has a talent for transforming ideas into real, impactful solutions. His mix of creativity and technical skill is unmatched!",
+      name: "Mariana Garza",
+      designation: "Campus Leader",
+      company: "Notion",
+      image: marianagarza,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Working with Max is a breeze. He’s collaborative, open to feedback, and always keeps the energy positive.",
+      name: "Emilio Hernandez",
+      designation: "Computer Research Assistant",
+      company: "Loyola University",
+      image: emiliohernandez,
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Max made sure our project launched smoothly and ahead of schedule. He’s reliable, efficient, and exceeds expectations.",
+      name: "Diego Alvarado",
+      designation: "IT Applications Interns",
+      company: "Schneider Electric",
+      image: diegocastaneda,
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Anime CRUD App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Flask web-app for managing an anime database (CRUD). Deployed in Docker with MySQL and Jenkins for automated redeployment.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "python",
+          color: "yellow-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "flask",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "docker",
+          color: "blue-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: flaskdocker,
+      source_code_link: "https://github.com/mazerman03/Flask-CRUD-PIA",
     },
     {
-      name: "Job IT",
+      name: "Anomaly Detector In Server Usage",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Cleaned and analyzed real time data from server performance as json to recognize anomalies in server usage. While using an AI trained model to predict daily server usage.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "python",
+          color: "yellow-text-gradient",
         },
         {
-          name: "restapi",
+          name: "pandas",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "ARIMA",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: anomalydetector,
+      source_code_link: "https://github.com/mazerman03/legacy--AnomalyDetector",
     },
     {
-      name: "Trip Guide",
+      name: "AI Powered Finance Coach and Advisor",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        " NLP model trained on financial education books and curated data to help a specific bank provide information and guide possible customers as a webapp chatbot",
       tags: [
         {
-          name: "nextjs",
+          name: "Python",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
+          name: "LangChain",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: atratohack,
+      source_code_link: "https://github.com/mazerman03/service-desk-chatbot",
     },
   ];
   
