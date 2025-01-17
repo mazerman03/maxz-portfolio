@@ -185,7 +185,7 @@ import {
       testimonial:
         "Max made sure our project launched smoothly and ahead of schedule. He’s reliable, efficient, and exceeds expectations.",
       name: "Diego Alvarado",
-      designation: "IT Applications Interns",
+      designation: "IT Applications Intern",
       company: "Schneider Electric",
       image: diegocastaneda,
     },
