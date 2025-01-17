@@ -14,15 +14,33 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value} = e.target;
     setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: '' });
   }
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!form.name.trim()) newErrors.name = 'Name is required.';
+    if (!form.email.trim()) newErrors.email = 'Email is required.';
+    else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = 'Enter a valid email.';
+    if (!form.message.trim()) newErrors.message = 'Message is required.';
+
+    return newErrors;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return; 
+    }
     setLoading(true);
 
     emailjs.send(
@@ -45,12 +63,12 @@ const Contact = () => {
         email: '',
         message: '',
       });
-    }, (error) => {
+      setErrors({}); 
+    }).catch((error) => {
       setLoading(false);
-      alert('Something went wrong.')
-
-    })
-  }
+      alert('Something went wrong.');
+    });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -75,7 +93,7 @@ const Contact = () => {
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
-
+            {errors.name && <span className="text-red-500 text-sm mt-2">{errors.name}</span>}
           </label>
 
           <label className="flex flex-col">
@@ -88,7 +106,7 @@ const Contact = () => {
               placeholder="What's your Email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
-
+            {errors.email && <span className="text-red-500 text-sm mt-2">{errors.email}</span>}
           </label>
           
           <label className="flex flex-col">
@@ -101,7 +119,7 @@ const Contact = () => {
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
-
+            {errors.message && <span className="text-red-500 text-sm mt-2">{errors.message}</span>}
           </label>
           <button
             type="submit"
