@@ -38,6 +38,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    computerfallback,
   } from "../assets";
   
   export const navLinks = [
@@ -73,7 +74,12 @@ import {
       icon: creator,
     },
   ];
-  
+    const fallbackimages = [
+      {
+        alt: "Computer Image",
+        image: computerfallback,
+      },
+    ];
   const technologies = [
     {
       name: "Python",
@@ -257,4 +263,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, fallbackimages, technologies, experiences, testimonials, projects };

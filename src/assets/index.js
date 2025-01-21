@@ -45,6 +45,7 @@ import emiliohernandez from "./portraits/emiliohernandez.jpg";
 import flaskdocker from "./flaskdocker.png";
 import anomalydetector from "./anomalydetector.png";
 import atratohack from "./atratohack.png";
+import computerfallback from "./computerfallback.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -91,6 +92,7 @@ export {
   diegocastaneda,
   emiliohernandez,
   marianagarza,
+  computerfallback,
   carrent,
   jobit,
   tripguide,

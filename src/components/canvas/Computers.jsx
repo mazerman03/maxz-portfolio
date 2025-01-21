@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-
 import  CanvasLoader from '../Loader'
 
 
@@ -31,7 +30,7 @@ const Computers = ({ isMobile }) => {
   )
 }
 
-const ComputersCanvas = () => {
+const ComputersCanvas = ({imagefallback, alttext}) => {
   const [isMobile, setIsMobile] = useState(false);
   //Took me a while to get this going so commenting for future updates
   useEffect(() => {
@@ -59,7 +58,19 @@ const ComputersCanvas = () => {
 
 
   }, [])
-
+  
+  if (isMobile) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <img
+          src={imagefallback}
+          alt={alttext}
+          className="max-w-[90%] h-auto"
+        />
+      </div>
+    );
+  }
+  
 
   return (
     <Canvas
