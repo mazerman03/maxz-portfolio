@@ -1,4 +1,4 @@
-import React, { Suspense} from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 
@@ -35,7 +35,46 @@ const Ball = (props) => {
   )
 }
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon, alttext }) => {
+  const [isMobile, setIsMobile] = useState(false);
+    //Took me a while to get this going so commenting for future updates
+    useEffect(() => {
+  
+      //added listener for changes in screen size
+      const mediaQuery = window.matchMedia('(max-width:500px)');
+  
+      //set the initial value of the isMobile state variable
+      setIsMobile(mediaQuery.matches);
+  
+      //Defined callback function to handle changes to the media query
+      const handleMediaQueryChange = (event) => {
+        setIsMobile(event.matches);
+      }
+      
+      //added callback function as a listener for changes to the media query
+      mediaQuery.addEventListener('change', handleMediaQueryChange);
+      
+      //removed the listener when the component is unmounted
+      return () => {
+        mediaQuery.removeEventListener('change', handleMediaQueryChange);
+  
+      }
+  
+  
+  
+    }, [])
+    
+    if (isMobile) {
+      return (
+        <div className="flex justify-center items-start h-screen">
+          <img
+            src={icon}
+            alt={alttext}
+            className="max-w-[90%] h-auto"
+          />
+        </div>
+      );
+    }
   return (
     <Canvas
     frameloop="always"
