@@ -61,15 +61,16 @@ const ComputersCanvas = ({imagefallback, alttext}) => {
   
   if (isMobile) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-end h-full w-full" >
         <img
           src={imagefallback}
           alt={alttext}
-          className="max-w-[90%] h-auto"
+          className="max-w-[60%] h-auto mb-10"
         />
       </div>
     );
   }
+  
   
 
   return (
