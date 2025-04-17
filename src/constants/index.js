@@ -22,12 +22,9 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     steelcase,
     omm,
+    epicor,
     flaskdocker,
     anomalydetector,
     atratohack,
@@ -132,11 +129,23 @@ import {
   ];
   const experiences = [
     {
+      title: "Software Engineer Intern",
+      company_name: "Epicor",
+      icon: epicor,
+      iconBg: "#214F63",
+      date: "Feb 2025 - Present",
+      points: [
+        "Developed and optimized internal data management tools in C# and SQL to accelerate ERP data import processes, improving efficiency for both client-side and server-side workflows.",
+        "Executed comprehensive debugging and issue resolution within Agile sprints, utilizing Postman for API testing and implementing manual and unit tests to ensure software reliability in a no-QA environment.",
+        "Collaborated with cross-functional teams using Azure DevOps and Git for version control, code reviews, and sprint planning, contributing to consistent and well-documented software delivery.",
+      ],
+    },
+    {
       title: "Applications Engineer Intern",
       company_name: "Steelcase Inc",
       icon: steelcase,
       iconBg: "#EEB83D",
-      date: "May 2024 - Present",
+      date: "May 2024 - Feb 2025",
       points: [
         "Engineered and deployed robust web applications on Azure utilizing C#, seamlessly integrating company-specific and third-party APIs to support over 100 business and non-business designers.",
         "Developed and optimized in-house APIs for AI-driven smart template generation and automated design conversion to Revit files, enhancing the compatibility and functionality of the company’s 3D modeling tools.",
